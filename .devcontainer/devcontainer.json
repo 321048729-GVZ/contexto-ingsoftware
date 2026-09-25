@@ -1,0 +1,9 @@
+{
+  "name": "Práctica 4 · Diagrama de contexto",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": ["hediet.vscode-drawio"]
+    }
+  }
+}
