@@ -1,8 +1,8 @@
 # Práctica 4 — Diagrama de contexto
 
 **Equipo:**
-**Sistema:**
-**Integrantes:**
+**Sistema:** Sistema de ventas e inventario para negocio minorista.
+**Integrantes:** González Vargas Alfredo Zenif
 
 ---
 
@@ -12,12 +12,12 @@ Antes de dibujar, llenen esta tabla. Una fila por entidad externa. Tomen como pu
 
 | Entidad externa | Datos que le entrega al sistema | Datos que recibe del sistema |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Empleados | Información de los productos. | Transacción de venta, transacción de compra, actualización de productos |
+| Dueños del negocio | Reportes ejecutivos (KPIs), estado del inventario | Solicitud de reporte por periodo |
 
-**¿Qué quedó fuera del sistema y por qué?** Anoten al menos un elemento que consideraron como entidad externa y descartaron (porque en realidad es parte del sistema, o porque no intercambia datos con él), y expliquen la decisión en 2 o 3 líneas.
+
+**¿Qué quedó fuera del sistema y por qué?** 
+Dejamos fuera a los provedores, ya que no tienen acceso directo al sistema y la información de los productos comprados para el negocio se estaria registrando por medio de los empleados y no por parte de los provedores.
 
 > 
 
