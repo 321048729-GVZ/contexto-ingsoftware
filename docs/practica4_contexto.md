@@ -17,7 +17,7 @@ Antes de dibujar, llenen esta tabla. Una fila por entidad externa. Tomen como pu
 
 
 **¿Qué quedó fuera del sistema y por qué?** 
-Dejamos fuera a los provedores, ya que no tienen acceso directo al sistema y la información de los productos comprados para el negocio se estaria registrando por medio de los empleados y no por parte de los provedores.
+Dejamos fuera a los proveedores, ya que no tienen acceso directo al sistema y la información de los productos comprados para el negocio se estaría registrando por medio de los empleados y no por parte de los proveedores. 
 
 > 
 
