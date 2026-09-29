@@ -25,31 +25,25 @@ Dejamos fuera a los proveedores, ya que no tienen acceso directo al sistema y la
 
 ## Parte C — Declaración de propósito
 
-En 2 o 3 líneas: ¿para qué existe el sistema, a quién sirve y qué beneficio produce? No describan pantallas ni tecnología.
-
-> 
+El sistema existe para centralizar y registrar las operaciones diarias de entrada y salida de mercancía de un negocio minorista. Sirve a los empleados operativos y a los dueños del establecimiento, produciendo el beneficio de mantener un control exacto del inventario y facilitar la toma de decisiones estratégicas mediante reportes de rendimiento.
 
 ---
 
 ## Parte D — Contenido de los flujos
 
-Una fila por cada flecha de su diagrama. En "Datos que contiene" listen los datos concretos que viajan en ese flujo.
-
 | Flujo | Origen → Destino | Datos que contiene |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| Solicitud de reporte sobre un periodo | Dueños del negocio → Sistema | Fechas de inicio y fin del periodo, y tipo de métricas solicitadas (ventas, ganancias, mermas). |
+| Reportes ejecutivos (KPIs) | Sistema → Dueños del negocio | Ingresos totales, productos más vendidos, márgenes de ganancia, alertas de stock y valor del inventario. |
+| Transacciones de venta | Empleados → Sistema | Código de barras/ID del producto, cantidad vendida, método de pago y fecha de la transacción. |
+| Actualizaciones de inventario | Empleados → Sistema | ID del producto, cantidad ajustada y motivo del ajuste (conteo físico, merma, devolución). |
+| Transacciones de compra | Empleados → Sistema | Datos del proveedor, ID de los artículos adquiridos, cantidad recibida y costo unitario de compra. |
+| Información de los productos | Sistema → Empleados | Nombre del artículo, precio de venta al público, existencias actuales en anaquel/almacén y descripción. |
 
 ---
 
 ## Declaración de uso de IA
 
-Si no usaron IA, escriban «No usamos IA» en la primera fila.
-
 | Herramienta | Para qué la usaron | Qué verificaron |
 |---|---|---|
-|  |  |  |
+| Gemini | Redacción de la declaración de propósito (Parte C) y desglose del contenido específico de los flujos de datos (Parte D). | Se verificó que los flujos correspondan exactamente a las flechas del diagrama de contexto y que los datos concretos sean coherentes con la operación del negocio. |
