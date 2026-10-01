@@ -1,0 +1,128 @@
+<mxfile host="65bd71144e">
+    <diagram id="dfd_preliminar_1" name="DFD Preliminar">
+        <mxGraphModel dx="1353" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="f_ventas_p1" edge="1" parent="1" source="ds_compras" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;" target="p1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ent_duenos" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="Dueños del negocio" vertex="1">
+                    <mxGeometry height="60" width="120" x="40" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ent_empleados" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;" value="Empleados" vertex="1">
+                    <mxGeometry height="60" width="120" x="840" y="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="1 Generar reporte&lt;br&gt;ejecutivo" vertex="1">
+                    <mxGeometry height="100" width="100" x="340" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="2 Registrar&lt;br&gt;venta" vertex="1">
+                    <mxGeometry height="100" width="100" x="580" y="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="3 Actualizar&lt;br&gt;inventario" vertex="1">
+                    <mxGeometry height="100" width="100" x="580" y="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="4 Registrar&lt;br&gt;compra" vertex="1">
+                    <mxGeometry height="100" width="100" x="580" y="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5" parent="1" style="shape=ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="5 Realizar&lt;br&gt;corte de caja" vertex="1">
+                    <mxGeometry height="100" width="100" x="340" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="f_req_reporte" edge="1" parent="1" source="ent_duenos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;exitX=1;exitY=0.25;entryX=0;entryY=0.25;" target="p1" value="Solicitud de reporte&lt;br&gt;sobre un periodo">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="240" y="105"/>
+                            <mxPoint x="240" y="65"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_res_reporte" edge="1" parent="1" source="p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;exitX=0;exitY=0.75;entryX=1;entryY=0.75;" target="ent_duenos" value="Reportes ejecutivos&lt;br&gt;(KPIs)">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="270" y="115"/>
+                            <mxPoint x="270" y="135"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_req_venta" edge="1" parent="1" source="ent_empleados" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;exitX=0.25;exitY=0;entryX=1;entryY=0.25;" target="p2" value="Transacciones&lt;br&gt;de venta">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="870" y="165"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_res_venta" edge="1" parent="1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;exitX=1;exitY=0.75;entryX=0.5;entryY=0;" target="ent_empleados" value="Información de&lt;br&gt;los productos">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="750" y="215"/>
+                            <mxPoint x="750" y="280"/>
+                            <mxPoint x="900" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_req_inv" edge="1" parent="1" source="ent_empleados" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="p3" value="Actualizaciones&lt;br&gt;de inventario">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f_req_compra" edge="1" parent="1" source="ent_empleados" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;exitX=0.25;exitY=1;entryX=1;entryY=0.5;" target="p4" value="Transacciones&lt;br&gt;de compra">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="870" y="510"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_p2_ventas" edge="1" parent="1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;exitX=0;exitY=0.5;entryX=1;entryY=0.25;" target="ds_ventas">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="520" y="190"/>
+                            <mxPoint x="520" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_p2_prod" edge="1" parent="1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;exitX=0;exitY=0.75;entryX=1;entryY=0.25;" target="ds_productos">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="215"/>
+                            <mxPoint x="490" y="340"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_p3_prod" edge="1" parent="1" source="p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="ds_productos">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f_p4_compras" edge="1" parent="1" source="p4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;exitX=0;exitY=0.25;entryX=1;entryY=0.5;" target="ds_compras">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="510" y="485"/>
+                            <mxPoint x="510" y="460"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_p4_prod" edge="1" parent="1" source="p4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;exitX=0;exitY=0.5;entryX=1;entryY=0.75;" target="ds_productos">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="490" y="510"/>
+                            <mxPoint x="490" y="360"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f_ventas_p5" edge="1" parent="1" source="ds_ventas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="p5">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="280" y="240"/>
+                            <mxPoint x="280" y="610"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ds_ventas" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;" value="Ventas" vertex="1">
+                    <mxGeometry height="40" width="100" x="340" y="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="ds_productos" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;" value="Productos" vertex="1">
+                    <mxGeometry height="40" width="100" x="340" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="ds_compras" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;" value="Compras" vertex="1">
+                    <mxGeometry height="40" width="100" x="340" y="440" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
