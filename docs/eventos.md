@@ -14,3 +14,4 @@
 | Herramienta | Para qué la usaron | Qué verificaron |
 |---|---|---|
 | Gemini | Generación de la Tabla A (Lista de eventos) a partir del diagrama de contexto y creación del código XML (`.drawio`) para el DFD preliminar, incluyendo la corrección de rutas visuales y almacenes. | Se verificó que los eventos siguieran la sintaxis de sujeto + verbo + objeto, la inclusión de un evento temporal, y que el DFD conectara lógicamente los procesos, entidades y almacenes sin solapar líneas. |
+
