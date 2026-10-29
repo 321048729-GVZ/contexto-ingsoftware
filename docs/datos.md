@@ -49,7 +49,7 @@
 
 ### 3. Valores posibles de un dato con estados o categorías
 
-**estado_producto** = ["disponible" | "agotado" | "descontinuado"]  
+**estado_producto** = ["disponible" | "agotado" | "descontinuado" |"baja"]  
 `*Categoría que define la condición actual de inventario de un producto*`
 
 **metodo_pago** = ["efectivo" | "tarjeta" | "transferencia"]  
